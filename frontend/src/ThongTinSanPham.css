@@ -1,0 +1,158 @@
+/* ThongTinSanPham.css */
+.product-img {
+  max-height: 400px;
+  object-fit: contain;
+  padding: 20px;
+}
+.product-img {
+  max-height: 300px;   /* giảm chiều cao nếu muốn gọn hơn */
+  object-fit: contain;
+  padding: 10px;       /* giảm padding */
+  width: 100%;         /* đảm bảo ảnh phủ hết chiều ngang */
+}
+ 
+
+
+.info-section {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.info-section h5 {
+  color: #28a745;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+  color: #28a745 !important;
+  font-size: 24px;
+}
+
+.slick-dots li button:before {
+  color: #28a745 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #28a745 !important;
+}
+
+/* Tuỳ chỉnh nút slider nằm giữa ảnh */
+.slick-prev, .slick-next {
+z-index: 5;
+top: 50%;
+transform: translateY(-50%);
+background-color: rgba(255, 255, 255, 0.8);
+border-radius: 50%;
+width: 30px;
+height: 30px;
+}
+
+.slick-prev {
+left: 10px;
+}
+
+.slick-next {
+right: 10px;
+}
+
+/* Hiển thị tên + giá trong ảnh */
+.product-card .image-wrapper {
+position: relative;
+overflow: hidden;
+}
+
+.product-card .product-overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+padding: 10px;
+background: rgba(0, 0, 0, 0.5);
+color: #fff;
+text-align: center;
+}
+
+.product-card .product-overlay h6 {
+font-size: 14px;
+margin: 0;
+font-weight: bold;
+}
+
+.product-card .product-overlay p {
+font-size: 13px;
+margin: 2px 0 0;
+color: #00ff99;
+}
+
+
+
+/* CSS cho ảnh phụ */
+.thumbnail-container {
+transition: all 0.2s ease-in-out;
+}
+
+.thumbnail-container:hover {
+transform: translateY(-2px);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-container.border-success {
+border-width: 2px !important;
+}
+
+/* CSS cho ảnh chính khi hover */
+.ratio-1x1 {
+overflow: hidden;
+}
+
+.ratio-1x1 img {
+transition: transform 0.3s ease;
+}
+
+.ratio-1x1:hover img {
+transform: scale(1.05);
+}
+
+/* CSS đã có từ trước */
+.product-card {
+transition: transform 0.3s;
+cursor: pointer;
+}
+
+.product-card:hover {
+transform: translateY(-10px);
+}
+
+.image-wrapper {
+position: relative;
+overflow: hidden;
+}
+
+.product-img {
+transition: transform 0.5s;
+}
+
+.product-card:hover .product-img {
+transform: scale(1.1);
+}
+
+.product-overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: rgba(255, 255, 255, 0.9);
+padding: 10px;
+transform: translateY(100%);
+transition: transform 0.3s;
+text-align: center;
+}
+
+.product-card:hover .product-overlay {
+transform: translateY(0);
+}

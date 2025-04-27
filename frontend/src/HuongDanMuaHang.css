@@ -1,0 +1,54 @@
+.huong-dan-mua-hang {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+  }
+  
+  .step {
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #28a745;
+    border-radius: 8px;
+  }
+  
+  .step h2 {
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .image-container {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .note {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+  }
+  
+  .step ul {
+    padding-left: 20px;   
+    text-align: left;     
+  }
+  
+  .step ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    text-align: left;     
+  }
